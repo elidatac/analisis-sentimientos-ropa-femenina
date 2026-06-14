@@ -21,7 +21,7 @@ Hugging Face es una plataforma especializada en Inteligencia Artificial y Proces
 * Herramientas de entrenamiento y evaluación.
 * Repositorios de modelos y datasets.
 
-Para este proyecto se evaluaron tres diferentes modelos Transformer preentrenados para determinr cual presenta el mejor desempeño en la tarea de clasificación de sentimientos.
+Para este proyecto se evaluaron tres diferentes modelos Transformer preentrenados para determinar cual presenta el mejor desempeño en la tarea de clasificación de sentimientos.
 
 ---
 
@@ -142,7 +142,7 @@ Los resultados completos se encuentran en la carpeta results.
 
 # Justificación de la selección final
 
-El modelo seleccionado fue **[BERT Multilingual Stars]**.
+El modelo seleccionado fue BERT Multilingual Sentiment, ya que obtuvo el mayor F1-score (0.9132) y la mayor precisión (0.9645).
 
 La decisión se tomó considerando:
 
@@ -158,11 +158,14 @@ Este modelo presente el mejor desempeño para cumplir con el objetivo de clasifi
 
 # Conclusiones
 
-Los modelos Transformer preentrenados permiten implementar soluciones de análisis de sentimientos con alta precisión sin necesidad de entrenar modelos desde cero, bajo el ecosistema Hugging Face. La implementación se llevó a cabo en Google colab mediante el uso de pipelines de inferencia listos para producción, reduciendo significativamente la complejidad técnica, el tiempo de desarrollo y los recursos computacionales requeridos. La comparación experimental entre los tres modelos, permitió identificar la alternativa con mejor desesmpeño a partir de métricas como  Accuracy, Precision, Recall y F1-score.
+Los modelos Transformer preentrenados permiten implementar soluciones de análisis de sentimientos con alta precisión sin necesidad de entrenar modelos desde cero, bajo el ecosistema Hugging Face. La implementación se llevó a cabo en Google Colab mediante el uso de pipelines de inferencia listos para producción, reduciendo significativamente la complejidad técnica, el tiempo de desarrollo y los recursos computacionales requeridos. La comparación experimental entre los tres modelos, permitió identificar la alternativa con mejor desempeño a partir de métricas como  Accuracy, Precision, Recall y F1-score.
 Desde la perspectiva del caso de uso, los resultados confirman que los modelos evaluados son capaces de automatizar el análisis de sentimientos de clientes en plataformas de comercio electrónico a partir del contenido textual en las nuevas reseñas de clientes dentro de las categorías positivo y negativo.
-Las predicciones realizadas sobre reseñas nuevas en el conjunto de datos demostraron la capacidad del modelo final para identificar opiniones favorables asociados con altos niveles de satisfacción y detectar comentarios negativados relacionados con malas experiencias de compra. 
-El uso de modelos preentrenados permite obtener una solucion funcional, escalable y de rápida implementación. Esta aproximación reduce los costos y tiempos asociados al entrenamiento especializado de modelos, manteniendo niveles de desempeño adecuados para apoyar la toma de decisiones basada en la percepción y satisfacción de los clientes.
+Las predicciones realizadas sobre reseñas nuevas en el conjunto de datos demostraron la capacidad del modelo final para identificar opiniones favorables asociados con altos niveles de satisfacción y detectar comentarios negativos relacionados con malas experiencias de compra. 
+El uso de modelos preentrenados permite obtener una solución funcional, escalable y de rápida implementación. Esta aproximación reduce los costos y tiempos asociados al entrenamiento especializado de modelos, manteniendo niveles de desempeño adecuados para apoyar la toma de decisiones basada en la percepción y satisfacción de los clientes.
 
 # Autor 
 
 Carmen Elizabeth Juárez Mortera
+
+# Nota 
+En este proyecto no se realizó fine-tuning; los modelos se utilizaron mediante pipelines de inferencia de Hugging Face para evaluar su desempeño de forma rápida, reproducible y con menor costo computacional.
