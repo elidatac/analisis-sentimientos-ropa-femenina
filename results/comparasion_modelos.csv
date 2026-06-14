@@ -1,0 +1,4 @@
+Modelo,Accuracy,Precision,Recall,F1-score,Tiempo_segundos
+BERT Multilingual Stars,0.876,0.9645,0.867,0.9132,246.81
+DistilBERT SST-2,0.86,0.9158,0.8963,0.9059,127.4
+RoBERTa Twitter Sentiment,0.84,0.8834,0.9069,0.895,194.54
