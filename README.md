@@ -166,5 +166,3 @@ El uso de modelos preentrenados permite obtener una solucion funcional, escalabl
 # Autor 
 
 Carmen Elizabeth Juárez Mortera
-
-6. Los resultados demuestran que la Inteligencia Artificial puede apoyar la toma de decisiones basada en la voz del cliente y mejorar la comprensión de la satisfacción de los usuarios.
